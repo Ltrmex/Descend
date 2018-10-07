@@ -189,7 +189,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 53
+  controlID: 110
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -336,8 +336,7 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 0
-    m_Folders:
-    - Assets/Scripts
+    m_Folders: []
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
@@ -348,7 +347,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: ee240000
     m_LastClickedID: 9454
-    m_ExpandedIDs: c2270000d027000030280000
+    m_ExpandedIDs: c2270000d02700000028000030280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -376,7 +375,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: c2270000d02700000028000030280000
+    m_ExpandedIDs: c2270000d027000030280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -536,14 +535,14 @@ MonoBehaviour:
     height: 614
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 1659.621882356939
+  lastFramingTime: 457.07503072569267
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 89.12038, y: 158.55122, z: -1.0649539}
+    m_Target: {x: -5.167256, y: 4.7318163, z: -1.1875}
     speed: 2
-    m_Value: {x: 89.12038, y: 158.55122, z: -1.0649539}
+    m_Value: {x: -5.167256, y: 4.7318163, z: -1.1875}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -571,9 +570,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 225.36546
+    m_Target: 62.56288
     speed: 2
-    m_Value: 225.36546
+    m_Value: 62.56288
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -616,7 +615,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 96fbffff00000000442a0000562a0000
+    m_ExpandedIDs: 96fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
