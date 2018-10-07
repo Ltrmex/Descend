@@ -2009,7 +2009,9 @@ MonoBehaviour:
   moveForce: 365
   maxSpeed: 5
   jumpForce: 1000
+  score: 0
   groundCheck: {fileID: 1149991769}
+  scoreText: {fileID: 1200606138}
 --- !u!1 &1706784774
 GameObject:
   m_ObjectHideFlags: 0

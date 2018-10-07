@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
 {
@@ -9,7 +10,10 @@ public class GameController : MonoBehaviour
     public float moveForce = 365f;
     public float maxSpeed = 5f;
     public float jumpForce = 1000f;
+    public int score;
+
     public Transform groundCheck;
+    public Text scoreText;
 
 
     private bool grounded = false;
@@ -22,6 +26,8 @@ public class GameController : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
+        score = 0;
+        InvokeRepeating("IncrementScore", 1, 1);
     }
 
     // Update is called once per frame
@@ -58,6 +64,11 @@ public class GameController : MonoBehaviour
             rb2d.AddForce(new Vector2(0f, jumpForce));
             jump = false;
         }
+    }
+
+    void IncrementScore() {
+        score++;
+        scoreText.text = "Score: " + score.ToString();
     }
 
 
