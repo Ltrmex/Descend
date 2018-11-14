@@ -14,6 +14,7 @@ TagManager:
   - ExplosionFX
   - HealthBar
   - Dead Zone
+  - Button
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - UI
   - 
   - 
-  - Bombs
+  - 
   - Player
   - Enemies
   - Pickups
