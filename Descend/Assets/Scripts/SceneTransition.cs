@@ -16,6 +16,21 @@ public class SceneTransition : MonoBehaviour {
 		
 	}
 
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Menu");
+    }   //  StartGame()
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene("Level Pick");
+    }   //  StartGame()
+
+    public void Quit()
+    {
+        Application.Quit();
+    }   //  Quit()
+
     public void PickLevel(int levelNum) {
         string sceneName;
 

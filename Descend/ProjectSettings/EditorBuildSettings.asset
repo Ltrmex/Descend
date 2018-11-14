@@ -14,12 +14,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Red Zone.unity
     guid: 2e31d2224d3672b4db006f50a3ddd1cf
-  - enabled: 1
-    path: Assets/Scenes/Yellow Zone.unity
-    guid: f4c1ef56775fbfe4385354279f566511
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Blue Zone.unity
     guid: 5dfdd384b15b66444a43e38b6dc4d585
   - enabled: 1
     path: Assets/Scenes/Green Zone.unity
     guid: 062ccd05b81fdc344934a629f24fad6e
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 0aee83fb3db0b534da2b674daa19d874
+  - enabled: 1
+    path: Assets/Scenes/Yellow Zone.unity
+    guid: 30c5dc8cea618804b8e27c38c99a56b2
