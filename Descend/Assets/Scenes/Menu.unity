@@ -164,6 +164,7 @@ GameObject:
   m_Component:
   - component: {fileID: 41728964}
   - component: {fileID: 41728966}
+  - component: {fileID: 41728965}
   m_Layer: 5
   m_Name: Scores
   m_TagString: Untagged
@@ -190,6 +191,33 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -75}
   m_SizeDelta: {x: 0, y: -150}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &41728965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 41728963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2125256e01671a241992cc64529eb5f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  user:
+  - nameDisplay: {fileID: 1602275802}
+    difficultyDisplay: {fileID: 1681167978}
+    scoreDisplay: {fileID: 2098571216}
+  - nameDisplay: {fileID: 2145946860}
+    difficultyDisplay: {fileID: 2039219860}
+    scoreDisplay: {fileID: 746949207}
+  - nameDisplay: {fileID: 1524336448}
+    difficultyDisplay: {fileID: 1475368340}
+    scoreDisplay: {fileID: 238024720}
+  - nameDisplay: {fileID: 836210238}
+    difficultyDisplay: {fileID: 1351693045}
+    scoreDisplay: {fileID: 834238549}
+  - nameDisplay: {fileID: 246280526}
+    difficultyDisplay: {fileID: 1306891668}
+    scoreDisplay: {fileID: 213413687}
 --- !u!222 &41728966
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -201,6 +229,18 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224449858200347590, guid: ffcad3c7ca72d1045b06ef28b3e16bf4,
     type: 2}
   m_PrefabInternal: {fileID: 2025721328}
+--- !u!114 &213413687 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114545947146544024, guid: 28e512cd88f281e43b2bdea8ed9ea130,
+    type: 2}
+  m_PrefabInternal: {fileID: 295368005}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &238024720 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114138015697346700, guid: 28e512cd88f281e43b2bdea8ed9ea130,
+    type: 2}
+  m_PrefabInternal: {fileID: 295368005}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &243800294
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,6 +327,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1227123170}
+        m_MethodName: Difficulty
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Hard
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &243800297
@@ -322,6 +373,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 243800294}
+--- !u!114 &246280526 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114973983580968898, guid: 28e512cd88f281e43b2bdea8ed9ea130,
+    type: 2}
+  m_PrefabInternal: {fileID: 295368005}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &295368005
 Prefab:
   m_ObjectHideFlags: 0
@@ -1269,6 +1326,15 @@ Prefab:
       propertyPath: m_Color.a
       value: 0.403
       objectReference: {fileID: 0}
+    - target: {fileID: 1533593422247866, guid: 28e512cd88f281e43b2bdea8ed9ea130, type: 2}
+      propertyPath: m_Name
+      value: Score
+      objectReference: {fileID: 0}
+    - target: {fileID: 114146695391879574, guid: 28e512cd88f281e43b2bdea8ed9ea130,
+        type: 2}
+      propertyPath: m_Text
+      value: Score
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 28e512cd88f281e43b2bdea8ed9ea130, type: 2}
   m_IsPrefabParent: 0
@@ -1484,6 +1550,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224488538559340690, guid: e3dedb0ea23e5a4438c97c4844dd3427,
     type: 2}
   m_PrefabInternal: {fileID: 679653951}
+--- !u!114 &746949207 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114932111004800322, guid: 28e512cd88f281e43b2bdea8ed9ea130,
+    type: 2}
+  m_PrefabInternal: {fileID: 295368005}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &754753413
 GameObject:
   m_ObjectHideFlags: 0
@@ -1632,6 +1704,18 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224488538559340690, guid: e3dedb0ea23e5a4438c97c4844dd3427,
     type: 2}
   m_PrefabInternal: {fileID: 1630135250}
+--- !u!114 &834238549 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114895784387466508, guid: 28e512cd88f281e43b2bdea8ed9ea130,
+    type: 2}
+  m_PrefabInternal: {fileID: 295368005}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &836210238 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114386429145896310, guid: 28e512cd88f281e43b2bdea8ed9ea130,
+    type: 2}
+  m_PrefabInternal: {fileID: 295368005}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1011346709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,6 +1800,17 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1227123170}
+        m_MethodName: Difficulty
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Medium
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -2011,9 +2106,11 @@ GameObject:
   - component: {fileID: 1227123165}
   - component: {fileID: 1227123164}
   - component: {fileID: 1227123163}
+  - component: {fileID: 1227123169}
   - component: {fileID: 1227123167}
   - component: {fileID: 1227123168}
-  - component: {fileID: 1227123169}
+  - component: {fileID: 1227123170}
+  - component: {fileID: 1227123171}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2188,6 +2285,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &1227123170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1227123162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e266fe73951331245b0ecd6cfd4c5ca8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1227123171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1227123162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea45bfd1dc6cd174fa4fde9ee2041c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1306891668 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114981919343750878, guid: 28e512cd88f281e43b2bdea8ed9ea130,
+    type: 2}
+  m_PrefabInternal: {fileID: 295368005}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1326269516
 Prefab:
   m_ObjectHideFlags: 0
@@ -2659,6 +2784,30 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f451cbfe44471db40870fbb19f44371a, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1351693045 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114265007472452190, guid: 28e512cd88f281e43b2bdea8ed9ea130,
+    type: 2}
+  m_PrefabInternal: {fileID: 295368005}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1475368340 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114306248675006504, guid: 28e512cd88f281e43b2bdea8ed9ea130,
+    type: 2}
+  m_PrefabInternal: {fileID: 295368005}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1524336448 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114630573078360150, guid: 28e512cd88f281e43b2bdea8ed9ea130,
+    type: 2}
+  m_PrefabInternal: {fileID: 295368005}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1602275802 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114344848334689454, guid: 28e512cd88f281e43b2bdea8ed9ea130,
+    type: 2}
+  m_PrefabInternal: {fileID: 295368005}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1001 &1630135250
 Prefab:
   m_ObjectHideFlags: 0
@@ -3105,6 +3254,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1671178471}
+--- !u!114 &1681167978 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114121174419955554, guid: 28e512cd88f281e43b2bdea8ed9ea130,
+    type: 2}
+  m_PrefabInternal: {fileID: 295368005}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1688539560
 GameObject:
   m_ObjectHideFlags: 0
@@ -3453,6 +3608,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1227123170}
+        m_MethodName: Difficulty
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Easy
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1830508401
@@ -3593,3 +3759,21 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ffcad3c7ca72d1045b06ef28b3e16bf4, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &2039219860 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114481838199808938, guid: 28e512cd88f281e43b2bdea8ed9ea130,
+    type: 2}
+  m_PrefabInternal: {fileID: 295368005}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &2098571216 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114615459124267296, guid: 28e512cd88f281e43b2bdea8ed9ea130,
+    type: 2}
+  m_PrefabInternal: {fileID: 295368005}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &2145946860 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114759014906954240, guid: 28e512cd88f281e43b2bdea8ed9ea130,
+    type: 2}
+  m_PrefabInternal: {fileID: 295368005}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}

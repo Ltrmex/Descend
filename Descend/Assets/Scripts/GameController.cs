@@ -11,21 +11,33 @@ public class GameController : MonoBehaviour
     public float maxSpeed = 5f;
     public float jumpForce = 1000f;
     public int score;
+    public int lives;
 
     public Transform groundCheck;
     public Text scoreText;
-
+    public Text livesText;
+    public string playerName;
 
     private bool grounded = false;
     private Rigidbody2D rb2d;
 
+    private DataController dataController;
+    private bool isClicked = false;
 
     // Use this for initialization
     void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
         score = 0;
+        lives = 3;
         InvokeRepeating("IncrementScore", 1, 1);
+    }
+
+    private void Start()
+    {
+        dataController = FindObjectOfType<DataController>();
+        isClicked = false;
+        playerName = "Player 1";
     }
 
     // Update is called once per frame
@@ -37,6 +49,9 @@ public class GameController : MonoBehaviour
         {
             jump = true;
         }
+
+        if (isClicked)
+            dataController.Submit(playerName, SetDifficulty.difficulty, score);
     }
 
     void FixedUpdate()
@@ -60,4 +75,14 @@ public class GameController : MonoBehaviour
         score++;
         scoreText.text = "Score: " + score.ToString();
     }
+
+    public void GetInput(string playerName)
+    {
+        this.playerName = playerName;
+    }   //  GetInput()
+
+    public void Clicked() {
+        isClicked = true;
+    }
+        
 }
