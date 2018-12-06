@@ -11,7 +11,7 @@ public class GameController : MonoBehaviour
     public float maxSpeed = 5f;
     public float jumpForce = 1000f;
     public int score;
-    public int lives;
+    public static int lives;
     public int coins;
 
     public Transform groundCheck;

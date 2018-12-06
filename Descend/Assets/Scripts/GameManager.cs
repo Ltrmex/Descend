@@ -15,6 +15,15 @@ public class GameManager : MonoBehaviour {
         gameOver.SetActive(false);
     }
 
+    private void Update()
+    {
+        if(GameController.lives == 0)
+        {
+            gameOver.SetActive(true);
+            Time.timeScale = 0;
+        }
+    }
+
     void OnTriggerEnter2D(Collider2D col)
     {
         if (col.tag == "Dead Zone")

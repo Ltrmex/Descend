@@ -665,6 +665,7 @@ GameObject:
   - component: {fileID: 410384053}
   - component: {fileID: 410384054}
   - component: {fileID: 410384055}
+  - component: {fileID: 410384056}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -767,6 +768,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ea45bfd1dc6cd174fa4fde9ee2041c85, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &410384056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 410384048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 597f56abf8ef328499519bec836940bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &470838239
@@ -2350,7 +2362,6 @@ MonoBehaviour:
   maxSpeed: 5
   jumpForce: 1000
   score: 0
-  lives: 0
   coins: 0
   groundCheck: {fileID: 1149991769}
   scoreText: {fileID: 1200606138}
