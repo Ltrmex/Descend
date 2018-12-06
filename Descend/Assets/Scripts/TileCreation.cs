@@ -7,14 +7,14 @@ public class TileCreation : MonoBehaviour {
 
     public Tile highlightTile;
     public Tilemap highlightMap;
-
+    Random rnd = new Random();
+    int num;
     private Vector3Int previous;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        CreateMap();
-
+        num = 1;
+        rnd = new Random();
     }
 
     void CreateMap()
@@ -22,7 +22,7 @@ public class TileCreation : MonoBehaviour {
         // get current grid location
         Vector3Int currentCell = highlightMap.WorldToCell(transform.position);
         // add one in a direction (you'll have to change this to match your directional control)
-        currentCell.x += 1;
+        currentCell.x += Random.Range(-10, 10);
 
         // if the position has changed
         if (currentCell != previous)

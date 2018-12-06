@@ -26,6 +26,9 @@ public class GameController : MonoBehaviour
     private DataController dataController;
     private bool isClicked = false;
 
+    public AudioClip hurtSound;
+    public AudioSource hurtSource;
+
     // Use this for initialization
     void Awake()
     {
@@ -47,6 +50,7 @@ public class GameController : MonoBehaviour
         dataController = FindObjectOfType<DataController>();
         isClicked = false;
         playerName = "Player 1";
+        hurtSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -106,6 +110,13 @@ public class GameController : MonoBehaviour
                 coins = 0;
             }
 
+            Destroy(col.gameObject);
+        }
+
+        if (col.tag == "Enemy") {
+            hurtSource.PlayOneShot(hurtSound);
+            lives--;
+            livesText.text = "Lives: " + lives.ToString();
             Destroy(col.gameObject);
         }
     }
