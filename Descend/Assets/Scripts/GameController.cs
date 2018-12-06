@@ -12,10 +12,12 @@ public class GameController : MonoBehaviour
     public float jumpForce = 1000f;
     public int score;
     public int lives;
+    public int coins;
 
     public Transform groundCheck;
     public Text scoreText;
     public Text livesText;
+    public Text coinsText;
     public string playerName;
 
     private bool grounded = false;
@@ -29,12 +31,19 @@ public class GameController : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         score = 0;
-        lives = 3;
         InvokeRepeating("IncrementScore", 1, 1);
     }
 
     private void Start()
     {
+        if (SetDifficulty.difficulty == "Medium")
+            lives = 2;
+        else if (SetDifficulty.difficulty == "Hard")
+            lives = 1;
+        else
+            lives = 3;
+
+        livesText.text = "Lives: " + lives.ToString();
         dataController = FindObjectOfType<DataController>();
         isClicked = false;
         playerName = "Player 1";
@@ -84,5 +93,21 @@ public class GameController : MonoBehaviour
     public void Clicked() {
         isClicked = true;
     }
-        
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.tag == "Coin"){
+            coins++;
+            coinsText.text = "Coins: " + coins.ToString();
+
+            if (coins > 10) {
+                lives++;
+                livesText.text = "Lives: " + lives.ToString();
+                coins = 0;
+            }
+
+            Destroy(col.gameObject);
+        }
+    }
+
 }
